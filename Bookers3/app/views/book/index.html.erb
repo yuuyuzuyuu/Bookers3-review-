@@ -1,0 +1,23 @@
+<li>
+  <%= link_to '投稿フォーム', new_book_path %>
+</li>
+
+<h2>Books</h2>
+<% @books.each do |book| %>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Title</th>
+        <th>Opinion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td><%= book.title %></td>
+        <td><%= book.body %></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
