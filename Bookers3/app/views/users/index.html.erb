@@ -1,0 +1,16 @@
+<h2>User info</h2>
+<h2>New book</h2>
+<%= form_with model: @book, local:true do |f| %>
+  <h4>Title</h4>
+  <%= f.text_field :title %>
+  <h4>Opinion</h4>
+  <%= f.text_field :body %>
+  <%= f.submit 'Create Book' %>
+<% end %>
+
+<h2>Users</h2>
+<table>
+  <theader>
+    <tr>image</tr>
+  </theader>
+</table>
